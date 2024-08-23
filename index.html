@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+        rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>Decodificador</title>
+</head>
+<body>
+    <main>
+        <section class="logo">
+            <img src="assets/Frame 6.svg" alt="Logo da Alura" />
+        </section>
+        <section class="input">
+            <textarea
+                name="entrada"
+                placeholder="Digite seu texto"
+                class="entrada"
+            ></textarea>
+            <div class="footer">
+                <div class="info">
+                    <img src="assets/exclamation-circlefill.svg" alt="Atenção" />
+                    <p>Apenas letras minúsculas e sem acentos.</p>
+                </div>
+                <div class="buttons">
+                    <button type="button" class="btn-cripto" onclick="getText()">Criptografar</button>
+                    <button type="button" class="btn-descripto" onclick="getDescripto()">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <section class="output">
+            <div class="vazia">
+                <img src="assets/busca text.png" alt="Imagem ilustrativa" />
+                <div class="sem-mensagem">
+                    <h2 class="titulo">Nenhuma mensagem encontrada</h2>
+                    <p class="isso"> Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,34 @@
+@mixin btn-cripto($width, $height, $color, $background, $bgHover) {
+  width: $width;
+  height: $height;
+
+  background-color: $background;
+  border-radius: 2.4rem;
+  border: 1px solid #0a3871;
+
+  color: $color;
+  line-height: 19.36px;
+
+  transition: 0.3s;
+  &:hover {
+    background-color: $bgHover;
+  }
+}
+
+@mixin responsive($screenWidth) {
+  @media (max-width: $screenWidth) {
+    @content;
+  }
+}
+
+.copiar {
+  @include btn-cripto(100%, 6.7rem, $dark-blue-300, none, #d8dfe8);
+}
+
+p {
+  color: $dark-blue-300;
+}
+
+.saida {
+  color: $gray-400;
+}
